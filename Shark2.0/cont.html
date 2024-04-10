@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Responsive Contact Us Form | CodingLab</title>
+		<link rel="stylesheet" href="cont.css" />
+		<!-- Fontawesome CDN Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="left-side">
+					<div class="phone details">
+						<i class="fas fa-phone-alt"></i>
+						<div class="topic">Phone</div>
+						<div class="text-one"><a href="tel:+84358971011" class="contact">+84 358971011</a></div>
+					</div>
+					<div class="email details">
+						<i class="fas fa-envelope"></i>
+						<div class="topic">Email</div>
+						<div class="text-one"><a href="mailto:nhhoang1101@gmail.com" class="contact">nhhoang1101@gmail.com</a></div>
+					</div>
+				</div>
+				<div class="right-side">
+					<div class="topic-text">Send us a message</div>
+					<p>If you have any questions for me or any comments about my website, you can send me message from here. It's my pleasure to help you.</p>
+					<form action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="access_key" value="e3e1204d-6faf-480d-8d07-cd6bf1a716a7">
+						<div class="input-box">
+							<input type="text" name="name" placeholder="Enter your name" required>
+						</div>
+						<div class="input-box">
+							<input type="text" name="email" placeholder="Enter your email" required>
+						</div>
+						<div class="input-box message-box">
+							<textarea name="message"  placeholder="Enter your message"></textarea>
+						</div>
+						<div class="button">
+							<button type="submit">Send now</button>
+						</div>
+					</form>
+					<script src="https://web3forms.com/client/script.js" async defer></script>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

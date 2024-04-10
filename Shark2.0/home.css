@@ -1,0 +1,204 @@
+/* Reset some default styles */
+@import url('https://fonts.cdnfonts.com/css/gt-super-ds-trial');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: "Roboto Flex", sans-serif;;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #fff;
+    color: #E74646;
+    padding: 20px 0;
+}
+
+
+
+.nav {
+    padding: 28px;
+    float: right;
+    display: inline;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline;
+    margin-left: 35px;
+}
+
+.nav ul li a {
+    color: #E74646;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    color:#a23131;
+}
+.hamburger-menu {
+    display: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color:  #faf8f5;
+    padding: 100px 0;
+    text-align: center;
+    color: #E74646;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin: 20px;
+    font-family: 'GT Super Txt Trial', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #E74646;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    background-color: #ec6b6b;
+}
+
+/* Features Section Styles */
+.features {
+    padding: 40px;
+    height: 100%;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    color: #E74646;
+}
+.feature {
+    text-align: center;
+    margin: 30px;
+    height: 150px;
+    width: 300px;
+    display: inline-block;
+}
+
+.feature h1 {
+    font-size: 64px;
+    color: #d03f3f;
+    margin-bottom: 10px;
+}
+.feature h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #ec6b6b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .header {
+        height: 120px;
+    }
+    .logo {
+        float: right;
+        margin-right: 20px;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    .nav {
+        display: none;
+    }
+    #menu__toggle {
+        opacity: 0;
+      }
+    #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+      }
+    #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+      }
+    #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    #menu__toggle:checked ~ .menu__box {
+        left: 0 !important;
+      }
+    .menu__btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+        margin: 35px 20px;
+      }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #E74646;
+        transition-duration: .25s;
+      }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #faf8f5;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+      }
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        margin: 20px ;
+        color: #E74646;
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+        transition-duration: .25s;
+      }
+    .menu__item:hover {
+        color: #a23131;
+      }
+}
